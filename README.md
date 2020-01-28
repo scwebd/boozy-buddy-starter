@@ -4,6 +4,10 @@ Starter code for DU Coding Boot Camp Node/Express/MySQL/AJAX Review Session. Dur
 
 The app will allow the user to add drinks of various types, to view drinks sorted by rating, and to view all "Loved" and "Hated" drinks sorted alphabetically.
 
+## Getting Started
+
+Fork and then clone this repo; we'll follow the comments in key files to piece together the app's functionality.
+
 ## Author
 
 * **Sarah Cullen** - *Initial HTML/CSS*
