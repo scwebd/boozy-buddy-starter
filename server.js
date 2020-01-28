@@ -2,13 +2,7 @@ const express = require("express");
 const mysql = require("mysql")
 const app = express();
 const PORT = 3000;
-const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "rootroot",
-    port: 3306,
-    database: "boozy_buddy"
-});
+// TODO: SET UP MYSQL CONNECTION OBJECT
 
 // Middleware
 // =============================================================
@@ -19,16 +13,11 @@ app.use(express.static("public"));
 
 // Database Connection
 // =============================================================
-connection.connect((err) => {
-    if (err) throw err;
-
-    console.log(`Connected to MySQL database as id ${connection.threadId}`);
-})
+// TODO: CONNECT TO DATABASE
 
 // Routes
 // =============================================================
-require("./routes/apiRoutes")(app, connection);
-require("./routes/htmlRoutes")(app);
+// TODO: IMPORT ROUTES FILES
 
 
 // Server Listen

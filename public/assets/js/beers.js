@@ -1,3 +1,4 @@
+// TODO: FOR EACH ROW OF DATA WE GET BACK FROM OUR QUERY, BUILD/APPEND A CARD TO #drinks
 {/* 
 <div class="card">
     <div class="card-body">
@@ -12,22 +13,3 @@
     </div>
 </div> 
 */}
-
-
-$.get("/api/beers", data => {
-    for (const beer of data) {
-        const card = 
-        `<div class="card">
-            <div class="card-body">
-                <h3>${beer.name}</h3>
-                <p><strong>Rating: </strong>${beer.rating}</p>
-                <p><strong>Loved it? </strong> ${beer.love === 1} | <strong>Hated it?</strong> ${beer.hate === 1}</p>
-                <p><strong>Type: </strong>${beer.type}</p>
-                <p><strong>Location: </strong>${beer.location || "Not specified"}</p>
-                <p><strong>Price: </strong>${beer.price ? "$" + beer.price.toFixed(2) : "Not specified"}</p>
-                <p><strong>Description/Notes: </strong>${beer.description || "Not specified"}</p>
-            </div>
-        </div>`;
-        $("#drinks").append(card);
-    }
-});

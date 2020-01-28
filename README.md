@@ -1,7 +1,9 @@
-# Node/Express/MySQL/AJAX Boozy Buddy (Drink Diary)
+# Node/Express/MySQL/AJAX Boozy Buddy (Drink Diary) Starter Code
 
-Solution code for DU Coding Boot Camp Node/Express/MySQL/AJAX Review Session. See [https://github.com/scwebd/boozy-buddy-starter](https://github.com/scwebd/boozy-buddy-starter) for the starter code for this session.
+Starter code for DU Coding Boot Camp Node/Express/MySQL/AJAX Review Session. During this session we'll create a database and table and connect to it using the `mysql` npm package. We'll then build out GET and POST routes to read and write data to our table. We will also wire up the front-end JavaScript logic to interact with our routes.
+
+The app will allow the user to add drinks of various types, to view drinks sorted by rating, and to view all "Loved" and "Hated" drinks sorted alphabetically.
 
 ## Author
 
-* **Sarah Cullen** - *HTML/CSS/JavaScript*
+* **Sarah Cullen** - *Initial HTML/CSS*
